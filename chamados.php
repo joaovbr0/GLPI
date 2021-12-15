@@ -484,7 +484,7 @@ $ent_name = $DB->result($result_n, 0, 'cname');
 				$result_ent = $DB->query($sql_ent);
 				$row_ent = $DB->fetch_assoc($result_ent);
 
-				echo "
+				echo "cl
 					<tr class='title' style='font-weight:normal;background-color:#2291228f;'>
 						<td style='text-align:center; vertical-align:middle; font-weight:bold;'> <a href=../../../../front/ticket.form.php?id=" . $row['id'] . " target=_blank > <span >" . $row['id'] . "</span> </a></td>
 						<td style='vertical-align:middle;'><span><img src=../../../../pics/" . $status1 . ".png /> " . Ticket::getStatus($row['status']) . "</span ></td>";
